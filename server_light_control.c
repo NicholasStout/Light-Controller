@@ -47,7 +47,7 @@ int open_socket()
   serverSocket = socket(PF_INET, SOCK_SREAM, IPPROTO_TCP);
   if (serverSocket == -1)
   {
-    printf("Shit broke");
+    printf("Error 1");
     exit(1);
   }
 
@@ -57,7 +57,7 @@ int open_socket()
     (const char *) &on, sizeof(on));
 
   if (status == -1) {
-    printf("Shit's real broke"); 
+    printf("Error 2"); 
   }
 
 }
